@@ -23,7 +23,7 @@ public class Livro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    String id;
+    Long id;
 
     private boolean isDeleted;
 

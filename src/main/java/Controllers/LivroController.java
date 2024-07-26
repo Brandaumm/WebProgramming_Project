@@ -18,10 +18,7 @@ public class LivroController {
     @Autowired // Injeta uma instância do repositório LivroRepository.
     private LivroRepository livroRepository;
 
-    @GetMapping
-    public List<Livro> getAllLivros() {
-        return livroRepository.findAll();
-    }
+
     @PostMapping
     public Livro createLivro(@Valid @RequestBody Livro livro) {
         return livroRepository.save(livro); // SALVA UM LIVRO NOVO NO BANCO
