@@ -434,6 +434,10 @@ textarea.input {
   color: #D10024;
 }
 
+.textoBranco h1{
+  color: white;
+}
+
 .header-links li i {
   color: #D10024;
   margin-right: 5px;
@@ -494,8 +498,9 @@ textarea.input {
 \*----------------------------*/
 
 .header-ctn {
-  float: right;
+  display: flex;
   padding: 15px 0px;
+  justify-content: flex-end;
 }
 
 .header-ctn>div {
